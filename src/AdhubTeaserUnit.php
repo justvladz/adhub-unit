@@ -41,6 +41,6 @@ class AdhubTeaserUnit extends AbstractAdhubUnit
 		$result = curl_exec($curl);
 		curl_close($curl);
 
-		return json_decode($result, true);
+		return (array)json_decode($result, true);
 	}
 }
