@@ -92,7 +92,7 @@ class AdhubTeaserUnit
 	}
 
 	/**
-	 * @param string $userAgent
+	 * @param string|null $userAgent
 	 *
 	 * @return $this
 	 */
@@ -104,7 +104,7 @@ class AdhubTeaserUnit
 	}
 
 	/**
-	 * @param string $httpReferer
+	 * @param string|null $httpReferer
 	 *
 	 * @return $this
 	 */
