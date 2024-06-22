@@ -96,7 +96,7 @@ class AdhubTeaserUnit
 	 *
 	 * @return $this
 	 */
-	public function setVisitorUserAgent(string $userAgent): self
+	public function setVisitorUserAgent(?string $userAgent): self
 	{
 		$this->userAgent = $userAgent;
 
@@ -108,7 +108,7 @@ class AdhubTeaserUnit
 	 *
 	 * @return $this
 	 */
-	public function setVisitorHttpReferer(string $httpReferer): self
+	public function setVisitorHttpReferer(?string $httpReferer): self
 	{
 		$this->httpReferer = $httpReferer;
 
