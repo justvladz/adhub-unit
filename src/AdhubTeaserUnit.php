@@ -46,7 +46,7 @@ class AdhubTeaserUnit
 	/**
 	 * @param int $unitId
 	 *
-	 * @return AdhubUnit
+	 * @return $this
 	 */
 	public function setUnitId(int $unitId): self
 	{
@@ -58,7 +58,7 @@ class AdhubTeaserUnit
 	/**
 	 * @param int $publisherId
 	 *
-	 * @return void
+	 * @return $this
 	 */
 	public function setPublisherId(int $publisherId): self
 	{
@@ -70,7 +70,7 @@ class AdhubTeaserUnit
 	/**
 	 * @param int $siteId
 	 *
-	 * @return void
+	 * @return $this
 	 */
 	public function setSiteId(int $siteId): self
 	{
@@ -82,7 +82,7 @@ class AdhubTeaserUnit
 	/**
 	 * @param string $ip
 	 *
-	 * @return void
+	 * @return $this
 	 */
 	public function setVisitorIp(string $ip): self
 	{
@@ -116,10 +116,10 @@ class AdhubTeaserUnit
 	}
 
 	/**
-	 * @return void
+	 * @return array
 	 * @throws Exception
 	 */
-	public function getJson()
+	public function getJson() : array
 	{
 		if (empty($this->unitId) || empty($this->siteId) || empty($this->publisherId) || empty($this->visitorIp)) {
 			throw new Exception('Fill unitId, siteId, publisherId and visitorIp');
