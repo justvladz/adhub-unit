@@ -1,6 +1,6 @@
 {
     "name": "justvladz/adhub-unit",
-    "description": "AdHub smart unit",
+    "description": "AdHub publisher unit api",
     "type": "library",
     "license": "Apache-2.0",
     "autoload": {
