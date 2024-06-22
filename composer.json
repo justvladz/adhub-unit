@@ -1,0 +1,19 @@
+{
+    "name": "justvladz/adhub-unit",
+    "description": "AdHub smart unit",
+    "type": "library",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Justvladz\\AdhubUnit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "V.Z.",
+            "email": "justvladz@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
