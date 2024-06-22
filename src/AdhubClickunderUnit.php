@@ -7,9 +7,9 @@ namespace AdhubUnit;
 use Exception;
 
 /**
- * AdhubUnit - AdHub smart code. Get ads through API.
+ * AdhubClickunderUnit
  */
-class AdhubTeaserUnit extends AbstractAdhubUnit
+class AdhubClickunderUnit extends AbstractAdhubUnit
 {
 	/**
 	 * @return array
@@ -21,7 +21,7 @@ class AdhubTeaserUnit extends AbstractAdhubUnit
 			throw new Exception('Fill unitId, siteId, publisherId and visitorIp');
 		}
 
-		$url = $this->rotatorUrl . '/teasers-out/' . $this->unitId . '/' . $this->siteId . '/' . $this->publisherId . '/?mode=json'; // &ip=' . $this->visitorIp
+		$url = $this->rotatorUrl . '/clickunder-out/' . $this->unitId . '/' . $this->siteId . '/' . $this->publisherId . '/?mode=json'; // &ip=' . $this->visitorIp
 
 		$curl = curl_init();
 
@@ -30,7 +30,7 @@ class AdhubTeaserUnit extends AbstractAdhubUnit
 		curl_setopt($curl, CURLOPT_HTTPHEADER, ['X-Forwarded-For: ' . $this->visitorIp]);
 		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-		
+
 		if (!empty($this->httpReferer)) {
 			curl_setopt($curl, CURLOPT_REFERER, $this->httpReferer);
 		}
